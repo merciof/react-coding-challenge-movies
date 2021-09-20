@@ -19,6 +19,7 @@ function SerieContainer() {
           <MaterialMediaCard
             title={element.title}
             description={element.description}
+            imageUrl={element.images["Poster Art"].url}
           />
         ))}
     </>

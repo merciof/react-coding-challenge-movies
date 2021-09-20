@@ -17,7 +17,12 @@ const useStyles = makeStyles({
   }
 });
 
-export default function MaterialMediaCard({ title, description, imageUrl }) {
+export default function MaterialMediaCard({
+  title,
+  description,
+  imageUrl,
+  releaseYear
+}) {
   const classes = useStyles();
 
   return (
@@ -31,6 +36,9 @@ export default function MaterialMediaCard({ title, description, imageUrl }) {
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
+          </Typography>
+          <Typography gutterBottom variant="h5" component="h2">
+            {releaseYear}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {description}
